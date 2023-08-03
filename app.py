@@ -33,7 +33,7 @@ def main():
 
         # Define the classes and corresponding messages
         classes = ['Eye Flu', 'Normal']
-        messages = ["You might have Eye Flu. Please consult an eye specialist.", "Your eyes are normal."]
+        messages = ["You might have Eye Flu. Some common symptoms are pain, redness, blurry vision, swelling, watering of the eyes. If you are facing any of these symptoms, We recommend that you should consult an eye specialist for better analysis.", "Your eyes seem normal."]
 
         # Display the prediction message
         st.write('Prediction:')
