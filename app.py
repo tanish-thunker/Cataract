@@ -12,8 +12,8 @@ with open('Models/labels.txt', 'r') as f:
 
 
 def main():
-    st.title('Cataract Eye Problem Detection App')
-    st.write('Upload an image of an eye to detect if it has a cataract.')
+    st.title('Eye Problems Detection App')
+    st.write('Upload an image of an eye to detect if it needs medical attention.')
 
     uploaded_file = st.file_uploader('Choose an image...', type=['jpg', 'jpeg', 'png'])
 
@@ -32,8 +32,8 @@ def main():
         predicted_class = np.argmax(prediction)
 
         # Define the classes and corresponding messages
-        classes = ['Cataract', 'Normal']
-        messages = ["You might have cataract. Please consult an eye specialist.", "Your eyes are normal."]
+        classes = ['Eye Flu', 'Normal']
+        messages = ["You might have Eye Flu. Please consult an eye specialist.", "Your eyes are normal."]
 
         # Display the prediction message
         st.write('Prediction:')
